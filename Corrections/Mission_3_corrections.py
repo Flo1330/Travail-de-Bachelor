@@ -11,7 +11,35 @@ def trier_pierres(pierres) -> str:
         couleur, eclat, taille, transparence, poids = pierre  # Décomposer les attributs
 
         # Ajouter votre code ici
-        pass
+        if couleur == "rouge" and eclat == "brillant":
+            if transparence == "élevée":
+                if taille > 50:
+                    rubis += 1
+                else:
+                    grenat += 1
+            elif transparence == "faible":
+                if poids > 30:
+                    grenat += 1
+                else:
+                    amethyste += 1
+        elif couleur == "bleu" and eclat == "brillant":
+            if transparence == "moyenne":
+                if taille == 40:
+                    quartz += 1
+                elif poids > 20:
+                    saphir += 1
+                else:
+                    amethyste += 1
+            else:
+                if taille > 50:
+                    saphir += 1
+                else:
+                    amethyste += 1
+        else:
+            if transparence == "faible" or poids < 10:
+                amethyste += 1
+            else:
+                quartz += 1
 
     # Générer le code secret
     mot_de_passe = f"{rubis}R{grenat}G{quartz}Q{amethyste}A{saphir}S"

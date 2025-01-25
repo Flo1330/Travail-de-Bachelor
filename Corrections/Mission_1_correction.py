@@ -3,7 +3,14 @@ from Verifications.Verification_ex_1 import verifier_taxes
 
 # Ajoute les conditions pour calculer la taxe et retourne cette valeur
 def calculer_taxe(val: int) -> float:
-    pass
+    taxe: float = 0
+    if val <= 100:
+        taxe = val * 0.05
+    elif 101 <= val <= 1000:
+        taxe = val * 0.1
+    else:
+        taxe = val * 0.15
+    return taxe
 
 
 if __name__ == '__main__':
