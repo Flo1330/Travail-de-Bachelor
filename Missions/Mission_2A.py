@@ -1,4 +1,4 @@
-from Verifications.Verification_ex_2 import verifier_mdp, verifier_couleur_cler
+from Verifications.Verification_mission_2A import verifier_mdp, verifier_couleur_cler
 
 
 def ouvrir_porte(torche: bool):
