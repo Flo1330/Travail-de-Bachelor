@@ -11,7 +11,7 @@ def verifier_mdp(mdp_essai: str) -> bool:
 
 def verifier_couleur_cle(couleur: str) -> bool:
     if couleur.lower() == "rouge":
-        print("Bonne couleur de clé, continuez")
+        print("Bonne couleur de clé, continue")
         return True
     else:
         return False
